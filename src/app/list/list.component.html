@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>ID</th>
+    <th>NOMBRE</th>
+    <th>DURACION</th>
+    <th>FECHA</th>
+  </tr>
+  <tr *ngFor="let song of songsList">
+    <td><a [routerLink]="['/detail', song.id]">{{song.id}}</a></td>
+    <td><a [routerLink]="['/detail', song.id]">{{song.nombre}}</a></td>
+    <td>{{song.duracion}}</td>
+    <td>{{song.fechaAlta}}</td>
+  </tr>
+</table>
